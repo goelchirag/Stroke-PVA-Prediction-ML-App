@@ -141,7 +141,7 @@ def main():
         output=predict_stroke(gender,age, hypertension, disease, married,
        work, residence, glucose, bmi,
        smoking)
-        st.success('The probability of you getting stroke is VERY HIGH')
+
 
         if output > 0.5:
             st.markdown(danger_html,unsafe_allow_html=True)
