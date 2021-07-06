@@ -127,6 +127,7 @@ def main():
     """
     danger_html="""  
       <div style="background-color:#F08080;padding:10px >
+             <h2 style="color:white;text-align:center;"> The Probablity of having a Stroke is VERY HIGH for you.</h2>
        <h2 style="color:black ;text-align:center;"> Please take the following precautions:-</h2><br>
         1. Exercise a lot - Regular physical activity will help lower your cholesterol and blood pressure, two of the biggest risk factors for stroke.<br>
         2. Stop smoking - Smokers are twice as likely to experience a stroke as nonsmokers. <br>
@@ -141,7 +142,7 @@ def main():
         output=predict_stroke(gender,age, hypertension, disease, married,
        work, residence, glucose, bmi,
        smoking)
-        st.success('The probability of you getting stroke is VERY HIGH')
+
 
         if output > 0.5:
             st.markdown(danger_html,unsafe_allow_html=True)
